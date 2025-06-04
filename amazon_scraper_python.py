@@ -5,9 +5,9 @@ from playwright.async_api import async_playwright
 # Configuration
 AMAZON_URL = "https://www.amazon.com"
 
-# STEP 1: Configure your Bright Data scraping browser endpoint
+# STEP 1: Configure your Bright Data Browser API endpoint
 # - Get endpoint from: https://brightdata.com/cp/zones
-# - Create new scraping browser: https://docs.brightdata.com/scraping-automation/scraping-browser/quickstart
+# - Create new Browser API: https://docs.brightdata.com/scraping-automation/scraping-browser/quickstart
 # - Websocket format: wss://brd-customer-[id]-zone-[zone]:[password]@[domain]:[port]
 BROWSER_WS = os.getenv("BRIGHT_DATA_SCRAPING_BROWSER_WEBSOCKET_ENDPOINT", "YOUR_BRIGHT_DATA_SCRAPING_BROWSER_WEBSOCKET_ENDPOINT")
 
