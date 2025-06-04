@@ -6,7 +6,7 @@ This project demonstrates how to use Bright Data's Browser API with Playwright t
 
 ### Getting Started
 
-1. Replace `YOUR_BRIGHT_DATA_SCRAPING_BROWSER_ENDPOINT` with your actual Bright Data Browser API webSocket endpoint in `booking-hotel-scraping.js`
+1. Replace `YOUR_BRIGHT_DATA_BROWSER_API_ENDPOINT` with your actual Bright Data Browser API webSocket endpoint in `booking-hotel-scraping.js`
 2. Run `python booking-hotel-scraping.js` to start scraping
 
 

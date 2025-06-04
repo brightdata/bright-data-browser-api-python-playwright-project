@@ -8,14 +8,14 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configuration
-BROWSER_WEBSOCKET_ENDPOINT = os.getenv('BRIGHT_DATA_SCRAPING_BROWSER_WEBSOCKET_ENDPOINT')
+BROWSER_WEBSOCKET_ENDPOINT = os.getenv('BRIGHT_DATA_BROWSER_API_WEBSOCKET_ENDPOINT')
 TARGET_URL = os.getenv('TARGET_URL', 'https://example.com')
 
 async def scrape_with_bright_data(url=TARGET_URL):
     """
     Main scraping function using Bright Data Browser API with Playwright
     """
-    if not BROWSER_WEBSOCKET_ENDPOINT or BROWSER_WEBSOCKET_ENDPOINT == "YOUR_BRIGHT_DATA_SCRAPING_BROWSER_WEBSOCKET_ENDPOINT":
+    if not BROWSER_WEBSOCKET_ENDPOINT or BROWSER_WEBSOCKET_ENDPOINT == "YOUR_BRIGHT_DATA_BROWSER_API_WEBSOCKET_ENDPOINT":
         raise Exception('Please provide valid Bright Data WebSocket endpoint in .env file')
     
     async with async_playwright() as p:

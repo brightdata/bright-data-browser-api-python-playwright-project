@@ -7,7 +7,7 @@ This project demonstrates how to use <a href="https://brightdata.com/products/sc
 
 ### Getting Started
 
-1. Replace `YOUR_BRIGHT_DATA_SCRAPING_BROWSER_ENDPOINT` with your actual Bright Data Browser API WebSocket endpoint in `index.py`
+1. Replace `YOUR_BRIGHT_DATA_BROWSER_API_ENDPOINT` with your actual Bright Data Browser API WebSocket endpoint in `index.py`
 2. Replace `"https://example.com` with your target URL
 3. Run `pip install -r requirements.txt` to install dependencies
 4. Run `python booking_scraper_python.py` to start scraping
