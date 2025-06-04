@@ -13,13 +13,13 @@ TARGET_URL = os.getenv('TARGET_URL', 'https://example.com')
 
 async def scrape_with_bright_data(url=TARGET_URL):
     """
-    Main scraping function using Bright Data Scraping Browser with Playwright
+    Main scraping function using Bright Data Browser API with Playwright
     """
     if not BROWSER_WEBSOCKET_ENDPOINT or BROWSER_WEBSOCKET_ENDPOINT == "YOUR_BRIGHT_DATA_SCRAPING_BROWSER_WEBSOCKET_ENDPOINT":
         raise Exception('Please provide valid Bright Data WebSocket endpoint in .env file')
     
     async with async_playwright() as p:
-        print("Connecting to Bright Data Scraping Browser...")
+        print("Connecting to Bright Data Browser API...")
         
         try:
             # Connect to the remote browser using the WebSocket endpoint
