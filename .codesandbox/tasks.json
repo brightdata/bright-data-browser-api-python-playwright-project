@@ -11,11 +11,11 @@
   "tasks": {
     "start": {
       "name": "start",
-      "command": "python scraper_playwright.py",
+      "command": "python index.py",
       "runAtStart": true,
       "restartOn": {
         "files": [
-          "scraper_playwright.py"
+          "index.py"
         ]
       }
     },
